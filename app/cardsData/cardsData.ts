@@ -117,35 +117,35 @@ export const cards = [
 
   {
     subtitle: "Choose",
-    title: "How Many Servings Do You Need?",
-    description: "Select the number of servings you need per meal.",
+    title: "How Many persons Meal Do You Need?",
+    description: "Select the number of persons you need per meal.",
 
     elements: [
       {
         type: "radio",
-        name: "servings",
-        label: "1 Serving",
+        name: "Person",
+        label: "1 Person",
         image: servings.src,
         info: "",
       },
       {
         type: "radio",
-        name: "servings",
-        label: "2 Servings",
+        name: "Person",
+        label: "2 Person",
         image: servings.src,
         info: "",
       },
       {
         type: "radio",
-        name: "servings",
-        label: "3 Servings",
+        name: "Person",
+        label: "3 Person",
         image: servings.src,
         info: "",
       },
       {
         type: "radio",
-        name: "servings",
-        label: "4 Servings",
+        name: "Person",
+        label: "4 Person",
         image: servings.src,
         info: "",
       },
@@ -248,6 +248,29 @@ export const cards = [
       },
     ],
   },
+  {
+    subtitle: "Choose",
+    title: "How Many Meals Do You Need per Day?",
+    description: "Select the number of Meals you need per Day.",
+
+    elements : [
+      {type:"radio", name:"mealPerDay", label:"1 Meal",  image: servings.src, info:""},
+      {type:"radio", name:"mealPerDay", label:"2 Meal",  image: servings.src, info:""},
+      {type:"radio", name:"mealPerDay", label:"3 Meal",  image: servings.src, info:""},
+      {type:"radio", name:"mealPerDay", label:"4 Meal",  image: servings.src, info:""}
+    ]
+  },
+  {
+    subtitle: "Choose",
+    title: "How many days Meal Plan you Need?",
+    description: "Select the number of Days.",
+
+    elements : [
+      {type:"radio", name:"days", label:"6 Days",  image: servings.src, info:""},
+      {type:"radio", name:"days", label:"7 Days",  image: servings.src, info:""}
+     
+    ]
+  },
 
   {
     subtitle: "Details",
@@ -255,18 +278,10 @@ export const cards = [
     description: "",
 
     elements: [
-      { type: "text", placeholder: "Your Name" },
-      { type: "email", placeholder: "Email Address" },
-      { type: "password", placeholder: "Password" },
+      { type: "text", placeholder: "Your Name",name:"name" },
+      { type: "email", placeholder: "Email Address" ,name:"email" },
+      { type: "password", placeholder: "Password" , name:"password" },
     ],
   },
-  {
-    subtitle: "Log In",
-    title: "",
-    description: "",
-    elements: [
-      { type: "email", placeholder: "Email Address" },
-      { type: "password", placeholder: "Password" },
-    ],
-  },
+ 
 ];
